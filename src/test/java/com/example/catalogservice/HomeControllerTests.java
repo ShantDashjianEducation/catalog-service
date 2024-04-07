@@ -21,6 +21,6 @@ public class HomeControllerTests {
 	public void testGetGreeting() throws Exception {
 		mockMvc.perform(get("/"))
 			.andExpect(status().isOk())
-			.andExpect(content().string("Welcome to the bookshop catalog"));
+			.andExpect(content().string("Welcome to the bookshop catalog!"));
 	}
 }
