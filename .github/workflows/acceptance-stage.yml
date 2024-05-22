@@ -33,7 +33,7 @@ jobs:
     steps:
       - run: echo "Running security tests"
   deliver:
-    name: Deliver release candidate to production
+    name: Deliver release candidate to production env
     needs: [ functional, performance, security ]
     runs-on: ubuntu-22.04
     steps:
